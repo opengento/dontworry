@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        
+        <!-- master tab -->
+        
+        <tab id="opengento" translate="label" sortOrder="1000000">
+            <label>Opengento</label>
+        </tab>
+        
+        <!-- module tab -->
+        
+        <section id="dontworry" translate="label" sortOrder="130" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Dont Worry</label>
+            <tab>opengento</tab>
+            <resource>Opengento_Dontworry::config</resource>
+            
+            <group id="befengshui" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Be Fengshui</label>
+                <field id="sentences" translate="label comment" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Sentences</label>
+                    <comment>Separated by a breakline</comment>
+                </field>
+            </group>
+            
+            
+        </section>
+    </system>
+</config>
+

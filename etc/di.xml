@@ -3,4 +3,10 @@
     <type name="Magento\Catalog\Api\Data\ProductInterface">
         <plugin name="opengento_dontworry_product" type="Opengento\Dontworry\Plugin\Model\Product" />
     </type>
+    <type name="Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction">
+        <plugin name="opengento_dontworry_listmessages" type="Opengento\Dontworry\Plugin\AdminNotification\Controller\Adminhtml\System\Message\ListAction"/>
+    </type>
+    <type name="Magento\AdminNotification\Block\System\Messages">
+        <plugin name="opengento_dontworry_messages" type="Opengento\Dontworry\Plugin\AdminNotification\Block\System\Messages"/>
+    </type>
 </config>

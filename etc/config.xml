@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+ Copyright © 2015 Wyomind. All rights reserved.
+ See LICENSE.txt for license details.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Store/etc/config.xsd">
+    <default>
+        <dontworry>
+            <befengshui>
+                <sentences>La gentillesse agit comme un boomerang. 
+Tu as plus de force et de volonté que tu ne le penses.
+Crois en toi. Qui peut t’en empêcher ?
+Un jour commence, c’est une nouvelle chance de vivre et de poursuivre tes rêves.
+Sois bienveillant envers toi-même et les autres, comme un soleil !
+Ecoute tes émotions, fais-leur confiance pour prendre des décisions.
+Attends-toi au meilleur pour lui donner toutes les chances d’apparaitre.
+Fais un pas après l’autre. C’est le meilleur moyen d’avancer.
+Les échecs t’apprennent plus de choses que les réussites. 
+Fais de ton mieux et pense à sourire !
+Sois fier de tes forces comme de tes faiblesses. 
+La perfection n’existe pas. 
+Les choses ont l’importance qu’on leur donne.
+Aide et donne sans rien attendre en retour pour être plus heureux.
+Redécouvre ce que tu as.
+Je t’aime parce que tu es toi.
+Tu progresses chaque jour.
+Garde toujours ton sourire intérieur. Cultive-le.
+Tu es là, ici et maintenant, tu occupes de l’espace, tes pieds reposent sur le sol, tu respires. 
+Poser des mots sur des émotions soulage.
+Souhaite le bien aux gens que tu aimes et à ceux que tu ne connais pas.
+Quand ta tête n’a pas la solution, écoute ton coeur.
+Pense à tout ce que tu sais faire.
+L’imagination est puissante. 
+Parfois, les émotions ne demandent qu’à être remarquées, puis elles s’en vont comme des bulles de savon dans le ciel. 
+Tu peux t’imaginer être ce que tu veux, qui tu veux. Une montagne majestueuse et immense par exemple, ou encore une rivière rapide et limpide. Et pourquoi pas ton super-héros préféré ?
+L’humour est ton ami. Et tu es le sien. 🙂
+Tu as le droit de te tromper autant de fois que tu veux !
+Le calme est dans ta respiration.
+Fais ce que tu aimes en priorité.
+Utilise tout ton potentiel.
+Crée tes propres choix.
+Tu peux te défendre avec des mots non-violents et décider de ne pas être affecté par ce que tu entends.
+Fais confiance à ton inconscient pour t’aider au moment ou tu t’y attends le moins.
+Quand on ne juge plus, la vie s’embellit !
+Garde toujours avec toi un carnet pour noter tes idées ou dessiner ce qui te passe par la tête.
+Aujourd’hui est un cadeau. C’est pour cela qu’on l’appelle présent.
+Sourire balaye de nombreux soucis.
+Ecrire ce que l’on pense permet de donner du sens.
+Les livres renferment de nombreux trésors qui n’attendent que toi.
+Si ça n’existe pas, invente-le !</sentences>
+            </befengshui>
+        </dontworry>
+    </default>
+</config>
