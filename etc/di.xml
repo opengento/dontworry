@@ -3,4 +3,16 @@
     <type name="Magento\Catalog\Api\Data\ProductInterface">
         <plugin name="opengento_dontworry_product" type="Opengento\Dontworry\Plugin\Model\Product" />
     </type>
+
+    <!-- Indexer Scheduler: Always successful -->
+    <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Scheduled">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Scheduler"
+                type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Scheduler" sortOrder="1" />
+    </type>
+
+    <!-- Indexer Status: Always successful -->
+    <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Status">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Status"
+                type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Status" sortOrder="1" />
+    </type>
 </config>
