@@ -21,4 +21,11 @@
         <plugin name="Opengento_Dontworry_Plugin_Block_Backend_Cache_Grid_Column_Statuses"
                 type="Opengento\Dontworry\Plugin\Block\Backend\Cache\Grid\Column\Statuses" sortOrder="1" />
     </type>
+
+    <!-- Messages: Always "success" + add Bravo message -->
+    <type name="Magento\Framework\Message\Factory">
+        <plugin name="Opengento_Dontworry_Plugin_Message_Factory"
+                type="Opengento\Dontworry\Plugin\Message\Factory" sortOrder="1" />
+    </type>
+
 </config>
