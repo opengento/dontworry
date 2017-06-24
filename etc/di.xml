@@ -15,4 +15,10 @@
         <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Status"
                 type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Status" sortOrder="1" />
     </type>
+
+    <!-- Cache Status: Always successful -->
+    <type name="Magento\Backend\Block\Cache\Grid\Column\Statuses">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Backend_Cache_Grid_Column_Statuses"
+                type="Opengento\Dontworry\Plugin\Block\Backend\Cache\Grid\Column\Statuses" sortOrder="1" />
+    </type>
 </config>
