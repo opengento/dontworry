@@ -1,7 +1,25 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Catalog\Api\Data\ProductInterface">
-        <plugin name="opengento_dontworry_product" type="Opengento\Dontworry\Plugin\Model\Product" />
+        <plugin name="opengento_dontworry_catalog_api_data_productinterface" type="Opengento\Dontworry\Plugin\Catalog\Api\Data\ProductInterface" />
+    </type>
+
+    <!-- Indexer Scheduler: Always successful -->
+    <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Scheduled">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Scheduler"
+                type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Scheduler" sortOrder="1" />
+    </type>
+
+    <!-- Indexer Status: Always successful -->
+    <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Status">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Status"
+                type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Status" sortOrder="1" />
+    </type>
+
+    <!-- Cache Status: Always successful -->
+    <type name="Magento\Backend\Block\Cache\Grid\Column\Statuses">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Backend_Cache_Grid_Column_Statuses"
+                type="Opengento\Dontworry\Plugin\Block\Backend\Cache\Grid\Column\Statuses" sortOrder="1" />
     </type>
     <type name="Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction">
         <plugin name="opengento_dontworry_listmessages" type="Opengento\Dontworry\Plugin\AdminNotification\Controller\Adminhtml\System\Message\ListAction"/>
