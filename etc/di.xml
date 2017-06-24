@@ -35,4 +35,16 @@
     <type name="Magento\AdminNotification\Block\System\Messages">
         <plugin name="opengento_dontworry_messages" type="Opengento\Dontworry\Plugin\AdminNotification\Block\System\Messages"/>
     </type>
+    
+    <!-- do not remove subscribers to the newsletter -->
+    
+    <type name="Magento\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribe">
+        <plugin name="opengento_dontworry_unsubscribe" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribeDelete"/>
+    </type>
+    <type name="Magento\Newsletter\Controller\Adminhtml\Subscriber\MassDelete">
+        <plugin name="opengento_dontworry_unsubscribe_delete" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribeDelete"/>
+    </type>
+    <type name="Magento\Newsletter\Controller\Manage\Save">
+        <plugin name="opengento_dontworry_unsubscribe_front" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Manage\Save"/>
+    </type>
 </config>
