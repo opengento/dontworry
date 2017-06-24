@@ -28,4 +28,11 @@
                 type="Opengento\Dontworry\Plugin\Message\Factory" sortOrder="1" />
     </type>
 
+    <!-- Feng shui Admin notification messages -->
+    <type name="Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction">
+        <plugin name="opengento_dontworry_listmessages" type="Opengento\Dontworry\Plugin\AdminNotification\Controller\Adminhtml\System\Message\ListAction"/>
+    </type>
+    <type name="Magento\AdminNotification\Block\System\Messages">
+        <plugin name="opengento_dontworry_messages" type="Opengento\Dontworry\Plugin\AdminNotification\Block\System\Messages"/>
+    </type>
 </config>
