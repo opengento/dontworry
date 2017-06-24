@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Catalog\Api\Data\ProductInterface">
-        <plugin name="opengento_dontworry_product" type="Opengento\Dontworry\Plugin\Model\Product" />
+        <plugin name="opengento_dontworry_catalog_api_data_productinterface" type="Opengento\Dontworry\Plugin\Catalog\Api\Data\ProductInterface" />
     </type>
 
     <!-- Indexer Scheduler: Always successful -->
