@@ -4,10 +4,6 @@
         <plugin name="opengento_dontworry_catalog_api_data_productinterface" type="Opengento\Dontworry\Plugin\Catalog\Api\Data\ProductInterface" />
     </type>
 
-    <type name="Magento\Checkout\Model\Cart">
-        <plugin name="opengento_dontworry_checkout_model_cart" type="Opengento\Dontworry\Plugin\Checkout\Model\Cart" />
-    </type>
-
     <!-- Indexer Scheduler: Always successful -->
     <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Scheduled">
         <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Scheduler"
@@ -18,5 +14,37 @@
     <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Status">
         <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Status"
                 type="Opengento\Dontworry\Plugin\Block\Indexer\Backend\Grid\Column\Renderer\Status" sortOrder="1" />
+    </type>
+
+    <!-- Cache Status: Always successful -->
+    <type name="Magento\Backend\Block\Cache\Grid\Column\Statuses">
+        <plugin name="Opengento_Dontworry_Plugin_Block_Backend_Cache_Grid_Column_Statuses"
+                type="Opengento\Dontworry\Plugin\Block\Backend\Cache\Grid\Column\Statuses" sortOrder="1" />
+    </type>
+
+    <!-- Messages: Always "success" + add Bravo message -->
+    <type name="Magento\Framework\Message\Factory">
+        <plugin name="Opengento_Dontworry_Plugin_Message_Factory"
+                type="Opengento\Dontworry\Plugin\Message\Factory" sortOrder="1" />
+    </type>
+
+    <!-- Feng shui Admin notification messages -->
+    <type name="Magento\AdminNotification\Controller\Adminhtml\System\Message\ListAction">
+        <plugin name="opengento_dontworry_listmessages" type="Opengento\Dontworry\Plugin\AdminNotification\Controller\Adminhtml\System\Message\ListAction"/>
+    </type>
+    <type name="Magento\AdminNotification\Block\System\Messages">
+        <plugin name="opengento_dontworry_messages" type="Opengento\Dontworry\Plugin\AdminNotification\Block\System\Messages"/>
+    </type>
+    <preference for="Magento\Framework\Mail\Template\TransportBuilder" type="Opengento\Dontworry\Model\Transport" />
+
+    <!-- do not remove subscribers to the newsletter -->
+    <type name="Magento\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribe">
+        <plugin name="opengento_dontworry_unsubscribe" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribeDelete"/>
+    </type>
+    <type name="Magento\Newsletter\Controller\Adminhtml\Subscriber\MassDelete">
+        <plugin name="opengento_dontworry_unsubscribe_delete" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Adminhtml\Subscriber\MassUnsubscribeDelete"/>
+    </type>
+    <type name="Magento\Newsletter\Controller\Manage\Save">
+        <plugin name="opengento_dontworry_unsubscribe_front" type="Opengento\Dontworry\Plugin\Newsletter\Controller\Manage\Save"/>
     </type>
 </config>

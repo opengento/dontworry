@@ -15,9 +15,17 @@
             <label>Dont Worry</label>
             <tab>opengento</tab>
             <resource>Opengento_Dontworry::config</resource>
-            
+
             <group id="befengshui" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Be Fengshui</label>
+                <field id="sentences" translate="label comment" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Sentences</label>
+                    <comment>Separated by a breakline</comment>
+                </field>
+            </group>
+
+            <group id="reviews" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Nice Reviews</label>
                 <field id="sentences" translate="label comment" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Sentences</label>
                     <comment>Separated by a breakline</comment>
