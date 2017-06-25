@@ -10,20 +10,22 @@ class Cart
 
     protected $order;
 
-    public function __construct(\Opengento\Dontworry\Helper\HappyCustomer $customerHelper)
+    protected $quote;
+
+    public function __construct(
+        \Opengento\Dontworry\Helper\HappyCustomer $customerHelper,
+        \Magento\Quote\Model\Quote $quote)
     {
         $this->customerHelper = $customerHelper;
+        $this->quote = $quote;
     }
 
     public function afterAddProduct(\Magento\Checkout\Model\Cart $subject)
     {
-        $this->customerHelper->createOrderFromCart($subject);
+        $this->customerHelper->createOrderFromProductId($subject->getCheckoutSession()->getLastAddedProductId());
 
-        $items = $subject->getItems();
+        $subject->setQuote($this->quote);
 
-        foreach ($items as $item) {
-            $subject->removeItem($item->getId());
-        }
         return $subject;
     }
 }

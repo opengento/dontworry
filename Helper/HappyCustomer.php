@@ -56,7 +56,7 @@ class HappyCustomer
         $this->orderRepository = $orderRepository;
     }
 
-    public function createOrderFromCart(\Magento\Checkout\Model\Cart $cart)
+    public function createOrderFromProductId($productId)
     {
         $this->logger->info($this->resolver->getLocale());
 
@@ -87,12 +87,7 @@ class HappyCustomer
 
         $cartInterface = $this->cartRepositoryInterface->get($cartId);
 
-        /** @var \Magento\Eav\Model\Entity\Collection\AbstractCollection $items */
-        $items = $cart->getItems();
-
-        foreach ($items as $item) {
-            $cartInterface->addProduct($item->getProduct(), $item->getQty() * 2);
-        }
+        $cartInterface->addProduct($this->productRepository->getById($productId), 2);
 
         $cartInterface->assignCustomer($customerInterface);
 
