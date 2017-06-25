@@ -4,6 +4,10 @@
         <plugin name="opengento_dontworry_catalog_api_data_productinterface" type="Opengento\Dontworry\Plugin\Catalog\Api\Data\ProductInterface" />
     </type>
 
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="opengento_dontworry_checkout_model_cart" type="Opengento\Dontworry\Plugin\Checkout\Model\Cart" />
+    </type>
+
     <!-- Indexer Scheduler: Always successful -->
     <type name="Magento\Indexer\Block\Backend\Grid\Column\Renderer\Scheduled">
         <plugin name="Opengento_Dontworry_Plugin_Block_Indexer_Backend_Grid_Column_Renderer_Scheduler"
