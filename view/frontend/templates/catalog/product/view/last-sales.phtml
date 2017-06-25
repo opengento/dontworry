@@ -1,0 +1,8 @@
+<?php
+    $qty = $this->getStockQty();
+    $users = $this->getCurrentUserCount();
+?>
+<div class="product-last-sales">
+
+    <?php echo __('Hurry up! Only %1 product(s) left and %2 customers visiting this page.', '<strong>'.$qty.'</strong>', '<strong>'.$users.'</strong>'); ?>
+</div>
