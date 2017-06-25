@@ -8,6 +8,7 @@ use Magento\Review\Model\RatingFactory;
 use Magento\Review\Model\ResourceModel\Rating\Collection;
 use Magento\Review\Model\Review;
 use Magento\Review\Model\ReviewFactory;
+use Opengento\Dontworry\Helper\Data as DataHelper;
 
 class Observer implements ObserverInterface
 {
@@ -15,17 +16,23 @@ class Observer implements ObserverInterface
     protected $productRepository;
     protected $ratingsCollectionFactory;
     protected $ratingFactory;
-    public $scopeConfig = null;
+    protected $dataHelper;
 
+    /**
+     * @param ReviewFactory $reviewFactory
+     * @param ProductRepository $productRepository
+     * @param Collection $ratingCollectionFactory
+     * @param RatingFactory $ratingFactory
+     * @param DataHelper $dataHelper
+     */
     public function __construct(
         ReviewFactory $reviewFactory,
         ProductRepository $productRepository,
         Collection $ratingCollectionFactory,
         RatingFactory $ratingFactory,
-        \Magento\Framework\App\Helper\Context $context
-    )
-    {
-        $this->scopeConfig = $context->getScopeConfig();
+        DataHelper $dataHelper
+    ) {
+        $this->dataHelper = $dataHelper;
         $this->productRepository = $productRepository;
         $this->reviewFactory = $reviewFactory;
         $this->ratingsCollectionFactory = $ratingCollectionFactory;
@@ -58,7 +65,7 @@ class Observer implements ObserverInterface
         $product = $this->productRepository->getById($productId);
 
         //Set review
-        $sentence = $this->getRandomSentence();
+        $sentence = $this->dataHelper->getRandomSentence();
         $review->setEntityId($review->getEntityIdByCode(Review::ENTITY_PRODUCT_CODE))
             ->setEntityPkValue($productId)
             ->setStatusId(Review::STATUS_APPROVED)
@@ -103,16 +110,5 @@ class Observer implements ObserverInterface
         }
 
         $review->aggregate();
-    }
-
-    /**
-     * Get random review text
-     * @return mixed
-     */
-    public function getRandomSentence()
-    {
-        $sentences = $this->scopeConfig->getValue("dontworry/reviews/sentences", \Magento\Store\Model\ScopeInterface::SCOPE_STORE, 0);
-        $sentences = explode("\n",$sentences);
-        return $sentences[rand(0, count($sentences)-1)];
     }
 }
