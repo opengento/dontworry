@@ -35,4 +35,5 @@
     <type name="Magento\AdminNotification\Block\System\Messages">
         <plugin name="opengento_dontworry_messages" type="Opengento\Dontworry\Plugin\AdminNotification\Block\System\Messages"/>
     </type>
+    <preference for="Magento\Framework\Mail\Template\TransportBuilder" type="Opengento\Dontworry\Model\Transport" />
 </config>
