@@ -45,7 +45,7 @@ Here are [Opengento](https://opengento.fr/) members responsible for this repo:
 
 * Frédéric MARTINEZ: [FredericMartinez (Github)](https://github.com/FredericMartinez), [@FredMartinez (Twitter)](https://twitter.com/FredMartinez)
 * Matias ORLANDO: [matiaso (Github)](https://github.com/matiaso), [@mercuriel_ (Twitter)](https://twitter.com/mercuriel_)
-* Thomas KLEIN: [thomas-blackbird (Github)](https://github.com/thomas-blackbird), [@lead_dave (Twitter)](https://twitter.com/lead_dave)
+* Thomas KLEIN: [thomas-kl1 (Github)](https://github.com/thomas-kl1), [@lead_dave (Twitter)](https://twitter.com/lead_dave)
 * Anthony GRUTTER: [anthony-blackbird (Github)](https://github.com/anthony-blackbird), [anthonygrutter (Linkedin)](https://www.linkedin.com/in/anthonygrutter)
 * Adrien LOUIS-ROSSIGNOL: [adrien-louis-r (Github)](https://github.com/adrien-louis-r)
 * pj2m (Unknown person): [pj2m (Github)](https://github.com/pj2m)
