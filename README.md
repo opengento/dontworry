@@ -48,4 +48,4 @@ Here are [Opengento](https://opengento.fr/) members responsible for this repo:
 * Thomas KLEIN: [thomas-kl1 (Github)](https://github.com/thomas-kl1), [@lead_dave (Twitter)](https://twitter.com/lead_dave)
 * Anthony GRUTTER: [anthony-blackbird (Github)](https://github.com/anthony-blackbird), [anthonygrutter (Linkedin)](https://www.linkedin.com/in/anthonygrutter)
 * Adrien LOUIS-ROSSIGNOL: [adrien-louis-r (Github)](https://github.com/adrien-louis-r)
-* pj2m (Unknown person): [pj2m (Github)](https://github.com/pj2m)
+* pj2m (Paul Masson aka Unknown person): [pj2m (Github)](https://github.com/pj2m)
