@@ -3,7 +3,7 @@
   "description": "M2 Dont Worry",
   "homepage": "https://github.com/opengento/dontworry",
   "require": {
-    "php": "~5.5.0|~5.6.0|^7.0",
+    "php": "~5.5.0|~5.6.0|^7.0|^8.0",
     "fzaninotto/faker": "^1.6"
   },
   "type": "magento2-module",
